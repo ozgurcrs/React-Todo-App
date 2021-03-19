@@ -1,0 +1,131 @@
+.addTodo {
+  width: 100%;
+  height: 405px;
+  position: absolute;
+  background: #fff;
+  border-top: 1px solid #d2d2d2;
+  overflow: hidden;
+  bottom: 0;
+  z-index: 1;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.title {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.title i {
+  font-size: 20px;
+  color: #116ca0;
+  position: relative;
+  margin: 0 10px;
+  transition: 1s;
+}
+
+.title button {
+  border: 0;
+  background: transparent;
+  transition: 700ms;
+  cursor: pointer;
+}
+
+.title button:hover,
+.title i:hover {
+  color: tomato;
+  transform: rotate(360deg);
+}
+
+.title button:focus {
+  outline: none;
+}
+
+.inputArea {
+  width: 90%;
+  height: auto;
+  color: #333;
+}
+.inputStyle {
+  width: 100%;
+  height: auto;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.inputStyle input {
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.inputArea select {
+  width: 93%;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-left: 5px;
+  border: 1px solid #d2d2d2;
+}
+
+.inputArea button:focus,
+.inputArea select:focus,
+.inputArea input,
+.inputArea option {
+  outline: none;
+  border: 1px solid #d2d2d2;
+}
+.inputArea button {
+  width: 70px;
+  height: 40px;
+  float: right;
+  margin-top: 10px;
+  border: 1px solid #eee;
+  color: #fff;
+  background: rgb(17, 108, 160);
+  background: radial-gradient(
+    circle,
+    rgba(17, 108, 160, 1) 0%,
+    rgba(90, 184, 237, 1) 100%
+  );
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.inputArea button:hover{
+    box-shadow: 0 1px 10px #d3d3d3;
+    background: #fff;
+    color: rgb(17, 108, 160);
+    
+}
+
+.inputArea button i {
+  position: relative;
+  top: 2px;
+  font-size: 14px;
+}
+
+.inputArea label {
+  text-align: left !important;
+  font-size: 15px;
+  color: #116ca0;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.successOrFail{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background: #3d9a15;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+}
